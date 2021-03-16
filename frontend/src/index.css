@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content_margined {
+  margin: 1rem;
+}
+
+.table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
