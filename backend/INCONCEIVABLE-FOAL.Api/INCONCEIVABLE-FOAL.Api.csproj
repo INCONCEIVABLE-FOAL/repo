@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\INCONCEIVABLE-FOAL.Domain\INCONCEIVABLE-FOAL.Domain.csproj" />
+    <ProjectReference Include="..\INCONCEIVABLE-FOAL.Data\INCONCEIVABLE-FOAL.Data.csproj" />
   </ItemGroup>
 
 </Project>

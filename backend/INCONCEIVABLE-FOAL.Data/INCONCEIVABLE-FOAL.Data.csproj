@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\INCONCEIVABLE-FOAL.Domain\INCONCEIVABLE-FOAL.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>INCONCEIVABLE_FOAL.Data</RootNamespace>
+  </PropertyGroup>
+
+</Project>
