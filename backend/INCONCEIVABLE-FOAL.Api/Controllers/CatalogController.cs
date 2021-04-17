@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using INCONCEIVABLE.FOAL.Domain.Catalog;
 using System.Collections.Generic;
+using INCONCEIVABLE.FOAL.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace INCONCEIVABLE.FOAL.Api.Controllers
 {
@@ -43,7 +45,7 @@ namespace INCONCEIVABLE.FOAL.Api.Controllers
         public IActionResult PostRating(int id, [FromBody] Rating rating)
         {
             var item = _db.Items.Find(id);
-            if )item == null)
+            if (item == null)
             {
                 return NotFound();
             }
@@ -57,7 +59,7 @@ namespace INCONCEIVABLE.FOAL.Api.Controllers
         [HttpPut("{id:int}")]
         public IActionResult PutItem(int id, [FromBody] Item item)
         {
-            if (id =/= item.Id)
+            if (id != item.Id)
             {
                 return BadRequest();
             }

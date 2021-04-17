@@ -1,4 +1,5 @@
 ﻿using INCONCEIVABLE.FOAL.Domain.Catalog;
+using INCONCEIVABLE.FOAL.Domain.Orders;
 using Microsoft.EntityFrameworkCore;
 
 namespace INCONCEIVABLE.FOAL.Data
@@ -10,5 +11,7 @@ namespace INCONCEIVABLE.FOAL.Data
         { }
 
         public DbSet<Item> Items {get; set; }
+
+        public DbSet<Order> Orders { get; set; }
     }
 }

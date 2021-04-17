@@ -10,7 +10,7 @@ namespace INCONCEIVABLE.FOAL.Data
         {
             if (!context.Items.Any())
             {
-                var items = new item[]
+                var items = new Item[]
                 {
                     new Item("T-Shirt", "Ohio State Block O", "Nike", 39.99m),
                     new Item("Shorts", "Casual shorts", "Nike", 49.99m)
