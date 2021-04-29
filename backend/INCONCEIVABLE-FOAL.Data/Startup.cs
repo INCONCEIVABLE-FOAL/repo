@@ -27,7 +27,13 @@ namespace INCONCEIVABLE_FOAL.Api
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "INCONCEIVABLE_FOAL.Api", 
                     Version = "v1" });
             });
-            services.
+            services.AddCors(options => 
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins("*");
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +56,8 @@ namespace INCONCEIVABLE_FOAL.Api
             {
                 endpoints.MapControllers();
             });
+
+            app.UseCors();
         }
     }
 }

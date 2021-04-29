@@ -7,6 +7,7 @@ import Home from './Home/Home';
 import data from './Products/data';
 import Orders from './Orders/Orders';
 import OrderDetail from './Orders/OrderDetails';
+import Products from './Products/Products';
 
 function App() {
   const openMenu = () => {
@@ -23,8 +24,8 @@ function App() {
     
       <ul className="products">
       {
-    data.products.map(product =>
-      <li>
+    Products.map((product) => (
+      <li key={product.id}>
         <div className="product">
           <img className="product-image" src={product.imageUrl} alt="product" />
           <div className="product-name">
@@ -32,10 +33,9 @@ function App() {
           </div>
           <div className="product-brand">{product.brand}</div>
           <div className="product-price">{product.price}</div>
-          <div className="product-rating">{product.rating} Stars ({product.numberOfReviews} Reviews)</div>
         </div>
-      </li>)
-  }
+      </li>
+    ))}
       </ul>
       <main className="main">
         <Router>
